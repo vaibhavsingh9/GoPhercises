@@ -1,9 +1,9 @@
-package examples
+package main
 
 import (
 	"fmt"
 	"strings"
-	link "test1"
+	"test1"
 )
 
 var exampleHtml = `

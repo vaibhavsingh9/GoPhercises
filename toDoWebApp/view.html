@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Application</title>
 </head>
 <body>
-$END$
+<h1>To Do List</h1>
+
+<div>
+    {{/* Displays Number of To Dos */}}
+    {{.ToDoCount}} To Dos
+    <a href="/new">
+        Add a To Do
+    </a>
+</div>
+
+<div>
+    {{/* Cycles through to dos and renders each */}}
+    {{range .ToDos}}
+    <p>{{.}}</p>
+    {{end}}
+</div>
 </body>
 </html>

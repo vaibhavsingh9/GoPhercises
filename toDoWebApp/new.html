@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Application</title>
 </head>
 <body>
-
+<h1>Add a To Do</h1>
+{{/* Pass values to create */}}
+<form action="/create" method="POST">
+    <div>
+        <input type="text" name="todo">
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
 </body>
 </html>
