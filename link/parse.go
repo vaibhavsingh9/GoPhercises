@@ -57,7 +57,7 @@ func text(n *html.Node) string {
 }
 
 func linkNodes(n *html.Node) []*html.Node {
-	if n.Type == html.ElementNode && n.Data = "a" {
+	if n.Type == html.ElementNode && n.Data = "div" {
 		return []*html.Node{n}
 	}
 	var ret []*html.Node
