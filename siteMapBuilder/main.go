@@ -102,7 +102,7 @@ func hrefs(r io.Reader, base string)[]string{
 	var ret []string
 	for _, l := range links{
 		switch{
-			case strings.HasPrefix(l.Href, "/"),:
+			case strings.HasPrefix(l.Href, "/"):
 				ret = append(ret, base+l.Href)
 				case strings.HasPrefix(l.Href, "http"):
 					ret = append(ret, l.Href)
